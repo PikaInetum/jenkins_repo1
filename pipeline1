@@ -1,0 +1,21 @@
+// pipeline
+pipeline {
+    agent any
+        //fases
+    stages {
+        stage ('build'){
+            //pasos
+            steps{
+                //pasos de la fase
+                echo 'building'
+            }
+        }
+        stage ('test'){
+            //pasos
+            steps{
+                //pasos de la fase
+                echo 'testing'
+            }
+        }
+    }
+}
